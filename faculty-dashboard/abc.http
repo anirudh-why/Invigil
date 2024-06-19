@@ -1,0 +1,67 @@
+POST http://localhost:5300/register
+Content-Type: application/json
+
+{
+  "labnumber":"A109",
+  "password":"123"
+}
+
+###
+POST http://localhost:5300/login
+Content-Type: application/json
+
+{
+  "labnumber":"A108",
+  "password":"123"
+}
+
+###
+post http://localhost:5300/instance
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYWJudW1iZXIiOiJBMTA4IiwiaWF0IjoxNzE4MjQ0MDY0LCJleHAiOjE3MTgzMzA0NjR9.gIt5H0NPCQBHRow0e9qjy_yO2-fljg79Vfqu6dnugwU
+
+{
+  "date":"{{$datetime iso8601}}",
+  "code":"123456",
+  "labnumber":"A108",
+  "allowedWebsites":["https://cloud.mongodb.com/","https://mangafire.to/","https://github.com/","https://mail.google.com/","https://web.whatsapp.com/"],
+  "users":[
+    {
+      "rollno":"22071A3237",
+      "name":"M Thoran",
+      "isConnected":"true",
+      "logs":["Ctrl+C is not allowed","Tab switching not allowed","Full screen exiting not allowed"],
+      "connectionTimes":[],
+      "loc":["hydy","telg","in"],
+      "IPAdd":"123.123.123"
+    }
+  ]
+}
+
+###
+put http://localhost:5300/code/A108
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYWJudW1iZXIiOiJBMTA4IiwiaWF0IjoxNzE4MjQ0MDY0LCJleHAiOjE3MTgzMzA0NjR9.gIt5H0NPCQBHRow0e9qjy_yO2-fljg79Vfqu6dnugwU
+
+{
+  "date":"22/11/2024",
+  "code":"123456"
+}
+
+###
+PUT http://localhost:5300/code/A109
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYWJudW1iZXIiOiJBMTA5IiwiaWF0IjoxNzE4MjI0NTg4LCJleHAiOjE3MTgzMTA5ODh9.JVFfHGQ1T6Nu7g4gaVqKGMggAR-62Y2r6Ke9NIWzqds
+
+{
+  "code":"AP23GF",
+  "date":"2024-06-12T11:08:39.549Z"
+}
+
+###
+GET http://localhost:5300/labs/A109
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYWJudW1iZXIiOiJBMTA5IiwiaWF0IjoxNzE4MjI0NTg4LCJleHAiOjE3MTgzMTA5ODh9.JVFfHGQ1T6Nu7g4gaVqKGMggAR-62Y2r6Ke9NIWzqds
+
+###
+GET http://localhost:5300/users/emtnMP
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsYWJudW1iZXIiOiJBMTA4IiwiaWF0IjoxNzE4MTg1NTgzLCJleHAiOjE3MTgyNzE5ODN9.rYWeav5JiDNXErFzXXSUDI_v-5ndkNP9JsQ8aOIPpO0
