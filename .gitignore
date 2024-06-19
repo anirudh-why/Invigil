@@ -1,2 +1,5 @@
 /faculty-dashboard/node_modules
+/faculty-dashboard/backend/.env
+
+
 /invigilator-browser-extension/node_modules
