@@ -1,0 +1,12 @@
+:root {
+  --left: #35374B;
+  --right: #344955;
+}
+
+.bg-right {
+  background-color: var(--right);
+}
+
+.bg-left {
+  background-color: var(--left);
+}

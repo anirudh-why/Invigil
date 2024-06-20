@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Techno Vista",
+  "version": "1.0",
+  "description": "A Chrome extension to detect tab and window switches, and alert on key events after login.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "notifications",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "geolocation"
+  ],
+  "host_permissions": [
+    "https://ipinfo.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "block.json"
+    }
+    ,{
+      "id": "allowlist_1",
+      "enabled": true,
+      "path": "allow.json"
+    }
+  ]
+  }
+}

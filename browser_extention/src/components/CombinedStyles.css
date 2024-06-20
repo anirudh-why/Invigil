@@ -1,0 +1,61 @@
+/* CombinedStyles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* To stack components vertically */
+  }
+  
+  .container1, .tab-switch-detector {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space between components */
+  }
+  
+  .tab-switch-detector h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .tab-switch-detector p {
+    color: #555;
+  }
+  
+  #fullscreenButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure button behaves like a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  
+  #fullscreenButton:hover {
+    background-color: #218838;
+  }
+  
+  #fullscreenButton:focus {
+    outline: none;
+  }
+  
+  .fullscreen-dimensions {
+    width: 375px;
+    height: 400px;
+  }
+  

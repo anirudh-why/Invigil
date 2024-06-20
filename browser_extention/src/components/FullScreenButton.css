@@ -1,0 +1,40 @@
+/* FullScreenButton.css */
+
+#fullscreenButton {
+    padding: 10px 20px;
+    background-color: #318CE7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure button behaves like a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  
+  .container1 {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #fullscreenButton:hover {
+    background-color: #318CE7;
+  }
+  
+  #fullscreenButton:focus {
+    outline: none;
+  }
+  
+  .fullscreen-dimensions {
+    width: 375px;
+    height: 410px;
+  }
+  

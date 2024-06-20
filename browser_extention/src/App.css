@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column; /* To stack components vertically */
+}
+
+button {
+  padding: 8px 16px;  /* Reduced size */
+  background-color: red;  /* Changed color to red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;  /* Reduced font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;  /* Ensure button behaves like a block-level element */
+  /* margin: 20px auto; */
+  margin-bottom: 2px; /* Center the button horizontally and add vertical margin */
+}
+
+button:hover {
+  background-color: darkred;  /* Darker red on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+.exit-exam-button {
+  padding: 8px 16px;  /* Reduced size */
+  padding-bottom: 16px; /* Additional bottom padding */
+  background-color: red;  /* Changed color to red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;  /* Reduced font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;  /* Ensure button behaves like a block-level element */
+  margin: 0 auto;  /* Center the button horizontally */
+}
+
+.exit-exam-button:hover {
+  background-color: darkred;  /* Darker red on hover */
+}
+
+.exit-exam-button:focus {
+  outline: none;
+}

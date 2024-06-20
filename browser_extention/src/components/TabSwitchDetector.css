@@ -1,0 +1,34 @@
+/* TabSwitchDetector.css */
+
+.tab-switch-detector {
+    /* text-align: center; */
+    flex: auto;
+    padding: 5px;
+    background-color: #ffffff;
+    /* border: 1px solid #dee2e6; */
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .tab-switch-detector h1 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #121111;
+  }
+  .tab-switch-detector h2 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #A91D3A;
+  }
+  .tab-switch-detector h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-bottom: 1px;
+    padding-left: 4px;
+    color: #1d1c1c;
+  }
+/*   
+  .tab-switch-detector p {
+    color: #555;
+  } */
+  
